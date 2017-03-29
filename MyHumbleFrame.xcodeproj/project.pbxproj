@@ -10,6 +10,7 @@
 		64C9B2FD1E8BCBE600C4D9B5 /* MyHumbleFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C9B2F31E8BCBE500C4D9B5 /* MyHumbleFrame.framework */; };
 		64C9B3021E8BCBE600C4D9B5 /* MyHumbleFrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C9B3011E8BCBE600C4D9B5 /* MyHumbleFrameTests.swift */; };
 		64C9B3041E8BCBE600C4D9B5 /* MyHumbleFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 64C9B2F61E8BCBE500C4D9B5 /* MyHumbleFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64C9B30E1E8BCFB100C4D9B5 /* MyHumbleFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C9B30D1E8BCFB100C4D9B5 /* MyHumbleFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		64C9B2FC1E8BCBE600C4D9B5 /* MyHumbleFrameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyHumbleFrameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C9B3011E8BCBE600C4D9B5 /* MyHumbleFrameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHumbleFrameTests.swift; sourceTree = "<group>"; };
 		64C9B3031E8BCBE600C4D9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64C9B30D1E8BCFB100C4D9B5 /* MyHumbleFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHumbleFrame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				64C9B2F61E8BCBE500C4D9B5 /* MyHumbleFrame.h */,
+				64C9B30D1E8BCFB100C4D9B5 /* MyHumbleFrame.swift */,
 				64C9B2F71E8BCBE500C4D9B5 /* Info.plist */,
 			);
 			path = MyHumbleFrame;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					64C9B2F21E8BCBE500C4D9B5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					64C9B2FB1E8BCBE600C4D9B5 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64C9B30E1E8BCFB100C4D9B5 /* MyHumbleFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,7 @@
 		64C9B3081E8BCBE600C4D9B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dongseop.MyHumbleFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +345,7 @@
 		64C9B3091E8BCBE600C4D9B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +364,7 @@
 		64C9B30B1E8BCBE600C4D9B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MyHumbleFrameTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dongseop.MyHumbleFrameTests;
@@ -367,6 +376,7 @@
 		64C9B30C1E8BCBE600C4D9B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MyHumbleFrameTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dongseop.MyHumbleFrameTests;
